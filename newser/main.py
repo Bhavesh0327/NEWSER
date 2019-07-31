@@ -53,7 +53,16 @@ def main():
 def news(cont , cat1 , cat2 , cat3):
 	print(Fore.BLACK + Back.YELLOW+ " THE TOP NEWS HEADLINES FOR TODAY ARE AS FOLLOWS (the news automatically updates after every 5 minutes)")
 	print(Fore.BLACK + Back.YELLOW+ " Right click over the blue lines to open full news ")
-	categories = (cat1 , cat2 , cat3)
+	if cat1==cat2:
+		categories = (cat1 , cat3)
+	elif cat1 == cat3:
+		categories = (cat1 , cat2)
+	elif cat2 == cat3:
+		categories = (cat1 , cat2)
+	elif cat1==cat2 && cat2==cat3:
+		categories = (cat1)
+	else:
+		categories = (cat1 , cat2 , cat3)
 	for x in categories:
 		url = ('https://newsapi.org/v2/top-headlines?'
 	       'country='+cont+'&'

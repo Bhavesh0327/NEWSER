@@ -16,6 +16,7 @@
 <div>In this version of this cli tool we need to run 2 files ,the "main.py" (as a server) , and then the "start.sh" using the terminal (basically it acts as the client interface).</div>
 <div>This page will ask for basic authentication (signup or login into an existing account) , and then update or check the data in the mysql database which gets create once you clone the repository in system and run the "main.py" file.</div>
 <div>Then user's interest are retrieved from the database and sent back to the server file(main.py) , which requests the news from the source , according to the country of user and his/her choice of interests.</div>
-<div>The news will then get printed over your terminal screen , according to the genres ( repeated 
+<div>The news will then get printed over your terminal screen , according to the genres ( repeated ones will be printed only once )</div>
+<div>After the news has been printed , the user has an option to exit immediately, or else the page will auto update , which inturn will clear the terminal and print the updated news (which is after approx 5 minutes , although it depends on the sources )</div>
 </body>
 </html>

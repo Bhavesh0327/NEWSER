@@ -1,6 +1,5 @@
 import socket
 import mysql.connector
-import os
 from colorama import Fore, Back, Style
 import time
 import requests
